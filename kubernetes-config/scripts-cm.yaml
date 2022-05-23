@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  namespace: locust
+  name: scripts-cm
+data:
+  locustfile.py: |
+    import time
+    from locust import HttpUser, task
+    class QuickstartUser(HttpUser):
+        @task
+        def index(self):
+            self.client.get("/")
