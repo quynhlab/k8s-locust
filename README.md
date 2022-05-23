@@ -3,5 +3,5 @@
 
 ## Architecture
 
-![iQuery](https://github.com/quynhlab/k8s-locust/images/dl-architecture.jpeg)
+![iQuery](https://github.com/quynhlab/k8s-locust/blob/main/images/dl-architecture.jpeg)
 
