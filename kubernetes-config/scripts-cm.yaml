@@ -7,6 +7,13 @@ data:
   locustfile.py: |
     import time
     from locust import HttpUser, task
+    
+    proxies = {
+    'http': 'http://43.129.95.244:8080'
+    }
+    with self.client.get(get_web_url(), proxies=proxies) as response:
+    pass
+    
     class QuickstartUser(HttpUser):
         @task
         def index(self):
