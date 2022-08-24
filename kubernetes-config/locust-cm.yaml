@@ -4,4 +4,4 @@ metadata:
   name: locust-cm
   namespace: locust
 data:
-  ATTACKED_HOST: https://cdn.quynhlab.com
+  ATTACKED_HOST: https://trucninh.namdinh.gov.vn
