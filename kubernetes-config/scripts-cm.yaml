@@ -10,7 +10,7 @@ data:
     from locust import HttpUser, task
     
     proxies = {
-	    "http": "104.16.104.228:80",
+	"http": "104.16.104.228:80"
     }
     
     class QuickstartUser(HttpUser):
