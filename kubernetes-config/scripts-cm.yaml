@@ -6,9 +6,14 @@ metadata:
 data:
   locustfile.py: |
     import time
+    import request
     from locust import HttpUser, task
+    
+    proxies = {
+	    "http": "104.16.104.228:80",
+    }
     
     class QuickstartUser(HttpUser):
         @task
         def index(self):
-            self.client.get("/")
+            self.client.get("/", proxies = proxies)
