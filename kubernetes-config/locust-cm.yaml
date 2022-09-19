@@ -4,4 +4,4 @@ metadata:
   name: locust-cm
   namespace: locust
 data:
-  ATTACKED_HOST: https://trucninh.namdinh.gov.vn
+  ATTACKED_HOST: http://210.211.99.18:8556
